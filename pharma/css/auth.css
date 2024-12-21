@@ -1,0 +1,105 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+}
+
+.auth-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.auth-tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    border-bottom: 2px solid #00b09b;
+    color: #00b09b;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.auth-form button:hover {
+    transform: translateY(-2px);
+}
+
+.social-auth {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.social-btn:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.social-btn span {
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .auth-box {
+        margin: 10px;
+        padding: 1.5rem;
+    }
+}
